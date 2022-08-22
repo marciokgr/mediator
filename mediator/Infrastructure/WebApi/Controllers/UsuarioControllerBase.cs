@@ -5,7 +5,7 @@ namespace mediator.Controllers
 {
 
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/usuario")]
     public class UsuarioControllerBase : ControllerBase
     {
         private ISender _mediator;

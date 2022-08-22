@@ -10,12 +10,12 @@ namespace mediator.Controllers
 
         }
 
-        [HttpGet(nameof(ApiController))]
-        public async Task<ActionResult<UsuarioResponseModel>> ApiController(int number)
+        [HttpGet]
+        public async Task<ActionResult<UsuarioResponseModel>> ApiController(string nome, string endereco, string sexo)
         {
             try
             {
-                var request = new UsuarioRequestModel { Number = number };
+                var request = new UsuarioRequestModel { Nome = nome, Endereco = endereco, Sexo = sexo };
                 return await Mediator.Send(request);
             }
             catch (Exception)

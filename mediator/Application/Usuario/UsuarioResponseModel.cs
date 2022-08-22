@@ -2,6 +2,6 @@
 {
     public class UsuarioResponseModel
     {
-        public string Response { get; set; } = string.Empty;
+        public string Nome { get; set; } = string.Empty;
     }
 }
